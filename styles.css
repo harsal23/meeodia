@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: linear-gradient(45deg, #ff6600, #ff0033);
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: yellow;
+    animation: fadeIn 2s;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+
+.btn {
+    background-color: yellow;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.music-section {
+    padding: 50px 20px;
+}
+
+.music-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.music-card:hover {
+    transform: scale(1.1);
+}
+
+.music-card img {
+    width: 50px;
+}
+
+.music-card p {
+    color: black;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
